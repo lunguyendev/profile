@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript'
+  src='http://code.jquery.com/jquery-1.7.1.js'></script>
+<script type='text/javascript'>
+$(window).load(function(){
+    $(document).ready(function(){
+        $('#colorcontainer > div').click(function() {
+            var name = $(this).css('background-image');
+            console.log(name);
+        });
+    });
+});
+</script>
+</head>
+<body>
+  <div style="position: relative; width: 700px;" id="colorcontainer">
+    <div class='color'
+      style='background: url(http://www.java2s.com/style/download.png); background-size: 100 72; background-repeat: no-repeat;'>
+      <span class='txt'> <br />this is a test
+      <br />this is a test
+      <br />this is a test
+      <br />this is a test
+      <br />this is a test
+      <br />this is a test
+      <br />this is a test
+      <br />this is a test
+      <br />this is a test
+      </span>
+      
+    </div>
+  </div>
+</body>
+</html>

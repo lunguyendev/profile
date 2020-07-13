@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    color: #5E5C7F ;
+}
+
+/* Navbar */
+.menu{
+    color: #fff;
+    font-family: 'Pacifico', cursive !important;
+    transition: 0.5s;
+} 
+.background-color{
+    background-color: #009432 !important;
+    transition: 0.8s;
+}
+.menu .text-menu a{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    transition: 0.8s;
+    font-size: 1.1rem;
+}
+.menu .text-menu a:hover{
+    color: #1e272e !important;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.stick-top{
+    background-color: #1e272e;
+}
+/* End Navbar */
+
+/*Css home */
+.home{
+    background-image: url('/img/lu.jpeg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    /* background-attachment: fixed; */
+    background-position: 60% 30%;
+    position: relative;
+    overflow: hidden;
+}
+.home .intro{
+    width: 100%;
+    position: absolute;
+    left: 12%;
+    top:60%;
+    overflow: hidden;
+}
+.home .intro .line{
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 4em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+.home .intro .line:nth-child(1)
+{
+    font-size: 2em;
+}
+.home .intro .typewrite{
+    animation: type 4s steps(60) 1s 1 normal both;
+}
+.home .intro .typewrite1{
+    animation: type2 4s steps(60) 1s 1 normal both;
+    animation-delay: 6s;
+}
+
+@keyframes type{
+    from{
+        width: 0;
+    }
+    to{
+        width: 15rem;
+    }
+}
+@keyframes type2{
+    from{
+        width: 0;
+    }
+    to{
+        width: 35rem;
+    }
+}
+
+/* ENd home */
+
+/* Css about */
+.about{
+    padding: 4.5rem 0;
+    font-family: 'Rubik', sans-serif;
+    color: #5E5C7F ;
+}
+.about h2{
+    margin-bottom: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.about .avatar img{
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.about .information p{
+    margin: 0;
+}
+.about .information .text{
+    margin-top: 1rem;
+    text-align: justify;
+}
+.about .information .detail{
+    margin-top: 1rem;
+}
+
+.about .information p b{
+    margin-right: 1em;
+}
+.about .information a{
+    margin: 2rem auto;
+}
+.about .information .btn{
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 1s;
+    margin-top: 3rem;
+}
+.about .information .btn:hover{
+    transform: scale(1.1);
+}
+
+/* end about */
+
+
+/* Skill*/
+.skill{
+    background-color: #009432 !important ;
+    color: white;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    padding: 2rem 0;
+}
+.skill .title{
+    padding: 2rem 0 !important;
+    font-weight: bold;
+    padding-top: 2rem !important;
+}
+.skill .card-skill{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skill .card-skill .box{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+    transition: 1s;
+    border-radius: 1rem;
+}
+.skill .card-skill .box:hover{
+    transform: scale(1.1);
+}
+.box .percent{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.box .percent svg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.box .percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 15;
+    stroke: #000;
+    stroke-dasharray: 600;
+    stroke-linecap: round;
+}
+.box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #fff;
+}
+
+.box-1 .percent svg circle:last-child{
+    stroke-dashoffset: calc(660 - ((85 * 660)/100));
+    stroke: #009432;
+    stroke-width: 10;
+}
+.box-2 .percent svg circle:last-child{
+    stroke-dashoffset: calc(660 - ((80 * 660)/100));
+    stroke: #009432;
+    stroke-width: 10;
+}
+.box-3 .percent svg circle:last-child{
+    stroke-dashoffset: calc(660 - ((70 * 660)/100));
+    stroke: #009432;
+    stroke-width: 10;
+}
+.box-4  .percent svg circle:last-child{
+    stroke-dashoffset: calc(660 - ((60 * 660)/100));
+    stroke: #009432;
+    stroke-width: 10;
+}
+.box .percent .number{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-weight: 500;
+}
+.box:hover .percent .number h2 {
+    transform: scale(1.4);
+}
+.box .percent .number h2{
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    transition: 1s;
+    
+}
+.box .percent .number i{
+    font-size: 4rem;
+}
+.box .percent .number h2 span{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.box .percent .text{
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+/* End Skill */
+
+
+/*Latest Words  */
+.works{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color:  #5E5C7F ;
+    padding: 4rem 0;
+}
+.works h2{
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+.works .menu-work ul li{
+    list-style: none;
+    display: inline-block;
+    color:  #1e272e;
+    font-weight: bold;
+    margin-right: 2rem;
+    padding: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.menu-work ul li:hover{
+    border-bottom: 1.5px solid #1e272e;
+    box-sizing: border-box;
+}
+.works .list-project .project{
+    margin-bottom: 1.5rem;
+}
+.works .list-project img{
+    width: 100%;
+    margin-bottom: 1rem;
+    
+}
+.works .list-project .content{
+    text-align: left;
+    color:  #1e272e;
+}
+.works .list-project .content h6:first-child{
+    font-weight: bold;
+    text-align: center;
+}
+.works .list-project .content .des{
+    margin-bottom: 0.5rem;
+}
+.works .list-project .content .btn{
+    display: flex;
+    border-radius: 2rem;
+    justify-content: center;
+}
+/*End Latest Words  */
+
+
+
+/* Responsive*/
+@media only screen and (max-width:992px){
+    .menu{
+        background-color: #009432 !important;
+    }
+}
+@media only screen and (max-width:576px){
+    .home .intro{
+        width: 100%;
+        position: absolute;
+        left: 7%;
+        top: 15%;
+        overflow: hidden;
+    }
+    .home .intro .line{
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 2em;
+        font-weight: bold;
+        color: #fff;
+    }
+    /*ABOUT  */
+    .about .information h2{
+        text-align: center;
+        padding-top: 2rem;
+    }
+}
